@@ -1,0 +1,31 @@
+{
+  "name": "react-perfect",
+  "version": "0.0.1",
+  "author": "",
+  "description": "A react component based on perfect ui",
+  "keywords": [
+    "react",
+    "perfect"
+  ],
+  "scripts": {},
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joy-web/react-perfect.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/joy-web/react-perfect/issues"
+  },
+  "homepage": "https://github.com/joy-web/react-perfect#readme"
+}
