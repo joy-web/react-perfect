@@ -1,0 +1,39 @@
+# Dependencies
+# 指定 Markdown 编译器 kramdown， 官方 http://kramdown.gettalong.org/
+markdown:         kramdown
+# 指定处理代码高亮解析器 rouge 官方 http://rouge.jneen.net/
+highlighter:      rouge
+
+kramdown:
+  auto_ids: false # 如果设置 true 并且没有指定 headers 的 id 值，则自动生成
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:           .
+destination:      ./_gh_pages
+host:             0.0.0.0
+port:             9001
+baseurl:          ""
+url:              http://react-perfect.com
+encoding:         UTF-8
+exclude:          [assets/scss/]
+
+# gems 插件
+# https://github.com/jekyll/jekyll-redirect-from
+# https://github.com/jekyll/jekyll-sitemap
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# 通用变量
+title: React Perfect Component
+keywords: React Perfect Component
+description: A react component based on perfect css.
+authors: Hopefuture, and React Perfect Component contributors
+
+# Custom vars 自定义变量
+current_version:  0.1.0
+repo:             https://github.com/joy-web/react-perfect-component
+

@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, ,user-scalable=no,shrink-to-fit=no">
+<meta name="keywords" content="{{ site.keywords }}">
+<meta name="description" content="{{ site.description }}">
+<meta name="authors" content="{{ site.authors }}">
+
+<title>
+  {% if page.title %}
+  {{ page.title }} &middot; {{ site.title }}
+  {% else %}
+  {{ site.title }} &middot; {{ site.description }}
+  {% endif %}
+</title>
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/favicon.png">
+<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+
+<!-- CSS -->
+<link href="{{ site.baseurl }}/assets/css/docs.css" rel="stylesheet">
