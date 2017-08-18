@@ -5,11 +5,10 @@ import {
   Route,
 } from 'react-router-dom';
 
-// Todo 这里需要导入 perfect css
-// import 'perfect-css';
-
-import InputExample from './components/InputExample';
 import Home from './components/Home';
+import InputExample from './components/InputExample';
+import GridExample from './components/grid/GridExample';
+import 'perfect-css';
 import './sass/example.scss';
 
 const Examples = () => (
@@ -17,6 +16,7 @@ const Examples = () => (
     <div>
       <Route exact path="/" component={Home}/>
       <Route path="/input" component={InputExample}/>
+      <Route path="/grid" component={GridExample}/>
     </div>
   </Router>
 );

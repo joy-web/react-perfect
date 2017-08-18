@@ -14,7 +14,7 @@ const webpackConfig = {
     //指定根目录路径，比如访问 eruda.min.js 时，只需 http://localhost:9090/eruda.min.js 即可
     contentBase: path.join(__dirname, 'examples'),
     host: '0.0.0.0',
-    port: 9090,
+    port: 9091,
     historyApiFallback: true,
     // 相当于往 entry 添加以下变量
     // const hotDevServer = 'webpack/hot/dev-server';
@@ -28,7 +28,7 @@ const webpackConfig = {
   },
   resolve: {
     //自动扩展文件后缀名
-    extensions: ['.js', '.scss']
+    extensions: ['.js', '.css', '.scss']
   },
 
   // 入口文件 让webpack用哪个文件作为项目的入口
@@ -64,14 +64,27 @@ const webpackConfig = {
         use: 'babel-loader',
       },
       {
+        test: /\.css/,
+        use: ['style-loader', {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true,
+          }
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            pack: 'cleaner',
+            sourceMap: true,
+          }
+        }],
+      },
+      {
         test: /\.scss/,
         use: ['style-loader',
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              modules: true,
-              localIdentName: '[name]__[local]__[hash:base64:5]'
             }
           }, {
             loader: 'postcss-loader',

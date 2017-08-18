@@ -215,7 +215,7 @@ module.exports = {
     "max-params": [2, 8], // 限定函数参数最大个数
     "max-statements": [2, 80, {"ignoreTopLevelFunctions": true}], // 在一个函数中限定声明表达式最多个数,内部函数会或略
     "max-statements-per-line": [2, {"max": 2}], // 每行最大表达式
-    "multiline-ternary": [2, "always-multiline"], // 三元表达式，是否需要多行书写
+    "multiline-ternary": [0, "always-multiline"], // 三元表达式，是否需要多行书写
     "new-cap": 0, // 构造函数首字母应该大写
     "new-parens": 2, // 实例化构造函数时，需要加入()，即使没有参数值，所以比如 new Person 是不允许的
     "newline-per-chained-call": 0,
