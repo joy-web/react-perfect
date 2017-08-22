@@ -10,6 +10,7 @@ const Home = () => {
       <ol className="example-list">
         <li><Link to="/input">Input 组件</Link></li>
         <li><Link to="/grid">Grid 组件</Link></li>
+        <li><Link to="/toast">Toast 组件</Link></li>
       </ol>
     </div>
   );

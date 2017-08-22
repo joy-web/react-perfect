@@ -8,6 +8,8 @@ import {
 import Home from './components/Home';
 import InputExample from './components/InputExample';
 import GridExample from './components/grid/GridExample';
+import ToastExample from './components/ToastExample';
+
 import 'perfect-css';
 import './sass/example.scss';
 
@@ -17,6 +19,7 @@ const Examples = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/input" component={InputExample}/>
       <Route path="/grid" component={GridExample}/>
+      <Route path="/toast" component={ToastExample}/>
     </div>
   </Router>
 );
