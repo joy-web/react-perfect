@@ -1,46 +1,51 @@
 # react-perfect-component
-  A react component based on perfect css
-  
-***Note: The Project is developing. In looking forward*** 
+京东金融Weus前端团队出品，最好用的react前端组件库。
 
-## Documentation
+The perfect react component library, produced by JDJR Weus big front-end team :).
 
-The React Perfect Component docs use the Jekyll to generator.
+## Features
+- 前端模块化的最佳实践。
+- 支持多种场景，高灵活性可配置。
+- 探索金融科技产品的通用设计风格。
 
-If you want to add and contribute to improve the document or translate this document.
-Please exec the following command to start the document service.
-
-### Clone repository from [github](https://github.com/joy-web/react-perfect-component)
+## Install
 
 ```bash
 git clone git@github.com:joy-web/react-perfect-component.git
 cd react-perfect-component
 npm install
 ```
-### The development environment
 
-At first, You need to install Ruby. The React Perfect Component docs is based on the [Ruby](https://www.ruby-lang.org/zh_cn/).
-
-###  Jekyll server
-
+## Example
 ```
-npm run serve:docs
+npm run serve:examples
 ```
 
-Note: If you exec the command the first, You should exec the following command
+## Specification
+**perfect组件化规范，待更新。**
+
+## Contribute
+### Component
+perfect是一个开源项目，我们欢迎您贡献自己的代码。请将符合perfect规范的组件放置在`/components`目录下，并记得去`/docs`和`/examples`里更新对应文档和实例哦。
+
+### Document
+
+The React Perfect Component docs use the Jekyll to generator. If you want to update the document, please exec the following command to start the document service.
+
+#### Install Jekyll
 
 1. Make sure you have installed the ruby. And we use the brew to manage ruby.
   ```
-    brew update 
+    brew update
     brew upgrade
     gem update 
     # or 
     sudo gem update
   ```
 2.  Install jekyll and dependency package.
-
 ```
 gem install jekyll bundler
+cd docs
 bundle install
 # or
 bundle update
@@ -48,9 +53,11 @@ bundle update
 
 You can refer to more information to http://jekyllrb.com/
 
-Then, You can open the serve in browser
-
-http://0.0.0.0:9001/
+#### Run doc server
+```
+npm run serve:docs
+```
+Then, You can open the serve in browser: http://0.0.0.0:9001/
 
 
 ## Issue
